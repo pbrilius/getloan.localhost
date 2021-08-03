@@ -24,6 +24,9 @@ chmod o+rw proxy
 ```shell
 ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/* . -v
 ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/.* . -v
+mkdir config/xml
+rm -fv {config,routes,templates,README.md}
+cp -rdfv vendor/pbrilius/c2c-mvc.pbgroupeu/{config,routes,templates,README.md} .
 ```
 
 ## Environment
