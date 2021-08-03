@@ -21,4 +21,7 @@ chmod o+rw proxy
 
 ## Vendor - parent company
 
-```shell ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/ _. -v ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/._ . -v
+```shell
+ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/* . -v
+ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/.* . -v
+```
