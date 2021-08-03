@@ -29,6 +29,7 @@ ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/.* . -v
 ## Environment
 
 ```shell
+cp .env.dist .env -v
 cd vendor/pbrilius/c2c-mvc.pbgroupeu
 ln -s ../../../.env . -v
 ln -s ../../../log . -v
