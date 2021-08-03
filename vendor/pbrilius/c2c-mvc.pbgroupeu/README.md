@@ -18,3 +18,27 @@ Proxies:
 mkdir proxy
 chmod o+rw proxy
 ```
+
+## Vendor - parent company
+
+```shell
+ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/* . -v
+ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/.* . -v
+```
+
+## Environment
+
+```shell
+cp .env.dist .env -v
+cd vendor/pbrilius/c2c-mvc.pbgroupeu
+ln -s ../../../.env . -v
+ln -s ../../../log . -v
+ln -s ../../../proxy . -v
+```
+
+## Checkout
+
+```shell
+cd ../../../
+vendor/bin/doctrine list
+```
