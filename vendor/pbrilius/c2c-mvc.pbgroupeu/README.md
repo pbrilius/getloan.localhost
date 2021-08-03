@@ -25,3 +25,19 @@ chmod o+rw proxy
 ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/* . -v
 ln -s vendor/pbrilius/c2c-mvc.pbgroupeu/.* . -v
 ```
+
+## Environment
+
+```shell
+cd vendor/pbrilius/c2c-mvc.pbgroupeu
+ln -s ../../../.env . -v
+ln -s ../../../log . -v
+ln -s ../../../proxy . -v
+```
+
+## Checkout
+
+```shell
+cd ../../../
+vendor/bin/doctrine list
+```
