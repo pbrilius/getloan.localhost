@@ -14,6 +14,9 @@
             "Pbrilius\\GetloanLocalhost\\": "src/"
         }
     },
+    "autoload-dev": {
+      "psr-4":{"Pbrilius\\GetloanLocalhost\\Tests": "tests/"}
+    },
     "authors": [
         {
             "name": "Povilas Brilius",
