@@ -1,5 +1,4 @@
 <?php
-
 use League\Config\Configuration;
 use Nette\Schema\Expect;
 
@@ -39,7 +38,7 @@ $userProvidedValues = [
         'port' => 3306,
         'host' => 'localhost',
         'database' => $_SERVER['DATABASE'],
-        'username' => $_SERVER['USERNAME'],
+        'username' => $_SERVER['DB_USERNAME'],
         'password' => $_SERVER['PASSWORD'],
     ],
     'logging' => [
