@@ -22,6 +22,15 @@ class User
      */
     private $id;
 
+    /**
+    * @var Pbrilius\GetloanLocalhost\Entity\Loan
+    */
+    private $debit;
+
+    /**
+    * @var Pbrilius\GetloanLocalhost\Entity\Loan
+    */
+    private $credit;
 
     /**
      * Set email.
@@ -80,4 +89,53 @@ class User
     {
         return $this->id;
     }
+
+    /**
+     * Get the value of Debit
+     *
+     * @return Pbrilius\GetloanLocalhost\Entity\Loan
+     */
+    public function getDebit()
+    {
+        return $this->debit;
+    }
+
+    /**
+     * Set the value of Debit
+     *
+     * @param Pbrilius\GetloanLocalhost\Entity\Loan $debit
+     *
+     * @return self
+     */
+    public function setDebit(Pbrilius\GetloanLocalhost\Entity\Loan $debit)
+    {
+        $this->debit = $debit;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Credit
+     *
+     * @return Pbrilius\GetloanLocalhost\Entity\Loan
+     */
+    public function getCredit()
+    {
+        return $this->credit;
+    }
+
+    /**
+     * Set the value of Credit
+     *
+     * @param Pbrilius\GetloanLocalhost\Entity\Loan $credit
+     *
+     * @return self
+     */
+    public function setCredit(Pbrilius\GetloanLocalhost\Entity\Loan $credit)
+    {
+        $this->credit = $credit;
+
+        return $this;
+    }
+
 }

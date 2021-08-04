@@ -16,15 +16,15 @@
     </field>
     <field name="payback" type="date" column="payBack" nullable="false"/>
     <field name="interestrates" type="decimal" column="interestRates" precision="3" scale="2" nullable="false"/>
-    <many-to-one field="borrower" target-entity="Pbrilius\GetloanLocalhost\Entity\User" fetch="LAZY">
+    <one-to-one field="borrower" target-entity="Pbrilius\GetloanLocalhost\Entity\User" fetch="LAZY" inversed-by="credit">
       <join-columns>
         <join-column name="borrower" referenced-column-name="id"/>
       </join-columns>
-    </many-to-one>
-    <many-to-one field="lender" target-entity="Pbrilius\GetloanLocalhost\Entity\User" fetch="LAZY">
+    </one-to-one>
+    <one-to-one field="lender" target-entity="Pbrilius\GetloanLocalhost\Entity\User" fetch="LAZY" inversed-by="debit">
       <join-columns>
         <join-column name="lender" referenced-column-name="id"/>
       </join-columns>
-    </many-to-one>
+    </one-to-one>
   </entity>
 </doctrine-mapping>

@@ -14,5 +14,7 @@
         <option name="fixed"/>
       </options>
     </field>
+    <one-to-one field="debit" target-entity="Loan" mapped-by="lender" />
+    <one-to-one field="credit" target-entity="Loan" mapped-by="borrower" />
   </entity>
 </doctrine-mapping>
